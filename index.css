@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    backdrop-filter: blur(10px);
+    background-image: url('IMG_20240923_175452_276.jpg');
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease forwards;
+}
+
+.title {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    animation: slideDown 1.5s ease forwards;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease forwards;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 15px 30px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    min-width: 180px;
+    text-align: center;
+}
+
+.category-btn:hover {
+    background-color: #45a049;
+}
+
+/* Animations, BY TEO DO NOT STEAL >:) */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
